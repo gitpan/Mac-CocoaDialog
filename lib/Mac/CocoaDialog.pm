@@ -1,11 +1,12 @@
 package Mac::CocoaDialog;
 
-use version; our $VERSION = qv('0.0.1');
+use version; our $VERSION = qv('0.0.2');
 
 use warnings;
 use strict;
 use Carp;
 use English qw( -no_match_vars );
+use IO::Handle;
 
 # Module implementation here
 sub AUTOLOAD {
@@ -78,6 +79,7 @@ sub pipe_to {
    my $self = shift;
    open my $fh, '|-', $self->path(), $self->command_line(@_)
      or croak "open() for input pipe: $OS_ERROR";
+   $fh->autoflush(1);  # autoflush by default, it's what you want
    return $fh;
 } ## end sub pipe_to
 

@@ -1,5 +1,8 @@
 Revision history for Mac-CocoaDialog
 
+0.0.2  Fri Jul 18 15:21:00 2008
+       Added Test::Exception to the prerequisites.
+
 0.0.1  Sun Jul 13 14:18:57 2008
        Initial release.
 

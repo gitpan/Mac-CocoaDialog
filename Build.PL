@@ -8,8 +8,9 @@ my $builder = Module::Build->new(
    dist_author       => 'Flavio Poletti <flavio [at] polettix [dot] it>',
    dist_version_from => 'lib/Mac/CocoaDialog.pm',
    requires          => {
-      'Test::More' => 0,
-      'version'    => 0,
+      'Test::More'      => 0,
+      'Test::Exception' => 0,
+      'version'         => 0,
    },
    add_to_cleanup => ['Mac-CocoaDialog-*'],
 );
