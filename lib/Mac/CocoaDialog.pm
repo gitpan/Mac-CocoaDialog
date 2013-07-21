@@ -1,6 +1,6 @@
 package Mac::CocoaDialog;
 
-use version; our $VERSION = qv('0.0.2');
+use version; our $VERSION = qv('0.0.3');
 
 use warnings;
 use strict;
@@ -135,6 +135,8 @@ sub new {
 
 1;    # Magic true value required at end of module
 __END__
+
+=encoding iso-8859-1
 
 =head1 NAME
 
